@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <ModuleSim>
-  <view camX="-9.204037904638454" camY="-217.69240203794197" zoom="3"/>
+  <view camX="-415.58231951143665" camY="-238.27588137593122" zoom="3"/>
   <ModuleSim>
     <module ID="0" type="SWITCH">
-      <dim orient="0" x="150.0" y="475.0"/>
+      <dim orient="0" x="550.0" y="400.0"/>
+      <label size="0">input 2</label>
       <inputs/>
       <outputs>
         <output ID="1"/>
@@ -11,23 +12,25 @@
       <data switch_set="1000"/>
     </module>
     <module ID="2" type="SWITCH">
-      <dim orient="0" x="325.0" y="475.0"/>
+      <dim orient="0" x="725.0" y="400.0"/>
+      <label size="0">input 1</label>
       <inputs/>
       <outputs>
         <output ID="3"/>
       </outputs>
-      <data switch_set="1000"/>
+      <data switch_set="0100"/>
     </module>
     <module ID="4" type="SWITCH">
-      <dim orient="0" x="500.0" y="475.0"/>
+      <dim orient="0" x="900.0" y="400.0"/>
+      <label size="0">logic selector</label>
       <inputs/>
       <outputs>
         <output ID="5"/>
       </outputs>
-      <data switch_set="0011"/>
+      <data switch_set="0010"/>
     </module>
     <module ID="6" type="LOGIC">
-      <dim orient="0" x="300.0" y="275.0"/>
+      <dim orient="0" x="700.0" y="200.0"/>
       <inputs>
         <input ID="9"/>
         <input ID="10"/>
@@ -39,7 +42,7 @@
       </outputs>
     </module>
     <module ID="12" type="REGISTER">
-      <dim orient="0" x="300.0" y="100.0"/>
+      <dim orient="0" x="700.0" y="25.0"/>
       <inputs>
         <input ID="13"/>
         <input ID="14"/>
@@ -48,29 +51,30 @@
         <output ID="15"/>
         <output ID="16"/>
       </outputs>
-      <data latched_value="0000"/>
+      <data latched_value="1100"/>
     </module>
     <module ID="17" type="SWITCH">
-      <dim orient="0" x="475.0" y="175.0"/>
+      <dim orient="0" x="875.0" y="100.0"/>
+      <label size="0">register control</label>
       <inputs/>
       <outputs>
         <output ID="18"/>
       </outputs>
-      <data switch_set="0111"/>
+      <data switch_set="0101"/>
     </module>
   </ModuleSim>
   <links>
     <link src="3" targ="10" type="StraightPath"/>
     <link src="1" targ="9" type="StraightPath">
-      <ctrlPt x="150.0" y="375.0"/>
-      <ctrlPt x="275.0" y="375.0"/>
+      <ctrlPt x="550.0" y="300.0"/>
+      <ctrlPt x="675.0" y="300.0"/>
     </link>
     <link src="5" targ="11" type="StraightPath">
-      <ctrlPt x="500.0" y="275.0"/>
+      <ctrlPt x="900.0" y="200.0"/>
     </link>
     <link src="7" targ="13" type="StraightPath"/>
     <link src="18" targ="14" type="StraightPath">
-      <ctrlPt x="475.0" y="100.0"/>
+      <ctrlPt x="875.0" y="25.0"/>
     </link>
   </links>
 </ModuleSim>
